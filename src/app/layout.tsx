@@ -2,12 +2,25 @@ import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/nav";
 import "@/styles/globals.css";
+import type { Metadata } from 'next'
 
-export const metadata = {
-  title: "CCC",
-  description: "Website for Everything Coding at Troy High",
+export const metadata: Metadata = {
+  title: 'THS CCC - Join us for 2024-2025!',
+  description: 'THS Computer Coding Club - Get ready for our best year yet.',
   icons: [{ rel: "icon", url: "/favicon.ico" }],
-};
+  openGraph: {
+    title: 'THS CCC - Join us for 2024-2025!',
+    description: 'THS Computer Coding Club - Get ready for our best year yet.',
+    images: [
+      {
+        url: '/meta.png',
+        width: 1200,
+        height: 630,
+        alt: 'THS CCC Open Graph Image',
+      },
+    ],
+  },
+}
 
 const fontHeading = Inter({
   subsets: ["latin"],

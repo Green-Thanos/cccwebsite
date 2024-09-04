@@ -1,5 +1,3 @@
-// clubsData.ts
-
 export interface Club {
   name: string;
   description: string;
@@ -20,7 +18,7 @@ export const clubsData: Club[] = [
   {
     name: "Artificial Intelligence Club",
     description: "Work on sustainability projects and raise awareness",
-    link: "/clubs/environmental",
+    link: "https://groupme.com/join_group/103001220/PwO0OEUZ",
   },
   {
     name: "Econ Club",
