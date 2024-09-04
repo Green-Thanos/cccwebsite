@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://troycolts.tech'),
   title: 'THS CCC',
   description: 'THS Computer Coding Club - Get ready for our best year yet. Join us for 2024-2025!',
   icons: [{ rel: "icon", url: "/favicon.ico" }],

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
 import { clubsData } from "@/app/data/clubs";
+import Image from "next/image";
 
 interface SubscribeResponse {
   message: string;
@@ -98,27 +99,38 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black py-12 md:py-24 lg:py-32 xl:py-48">
-        <div className="container mx-auto px-4">
-          <h2 className="mb-8 text-center text-3xl font-bold text-white">
-            Other Clubs to Check Out
-          </h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {clubsData.map((club, index) => (
-                <div
-                  key={index}
-                  className="rounded-lg bg-gray-800 p-6 transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
-                >
-                  <Link href={club.link}>
-                  <h3 className="mb-2 text-xl font-semibold text-white">
-                    {club.name}
-                  </h3>
-                  <p className="mb-4 text-gray-300">{club.description}</p>
-                  </Link>
-                </div>
-            ))}
+  <div className="container mx-auto px-4">
+    <h2 className="mb-8 text-center text-3xl font-bold text-white">
+      Other Clubs to Check Out
+    </h2>
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {clubsData.map((club, index) => (
+        <div
+          key={index}
+          className="flex items-center rounded-lg bg-gray-800 p-6 transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
+        >
+          {club.imageUrl && (
+            <Image
+              src={club.imageUrl}
+              alt={club.name}
+              width={96}
+              height={96}
+              className="mr-4 rounded-lg object-cover"
+            />
+          )}
+          <div>
+            <Link href={club.link}>
+              <h3 className="mb-2 text-xl font-semibold text-white">
+                {club.name}
+              </h3>
+              <p className="mb-4 text-gray-300">{club.description}</p>
+            </Link>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
     </>
   );
 }
