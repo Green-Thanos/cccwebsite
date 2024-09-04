@@ -18,7 +18,7 @@ export default function Navbar() {
             className="flex items-center space-x-2"
           >
             <Link
-              href="https://groupme.com/join_group/12345678/abcdefgh"
+              href="https://groupme.com/join_group/103009781/ildKODPJ"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2"
