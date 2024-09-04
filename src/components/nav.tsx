@@ -33,7 +33,7 @@ export default function Navbar() {
             className="flex items-center space-x-2"
           >
             <Link
-              href="https://discord.gg/abcdefgh"
+              href="https://discord.gg/5XygwPjrMB"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2"

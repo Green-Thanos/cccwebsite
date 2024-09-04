@@ -12,18 +12,18 @@ export const clubsData: Club[] = [
   },
   {
     name: "Physics Club",
-    description: "Most fun",
-    link: "/clubs/debate",
+    description: "Most fun club at school no lie",
+    link: "https://discord.gg/R5Te97nhWK",
   },
   {
     name: "Artificial Intelligence Club",
-    description: "matthew li",
+    description: "On goodness you\'ve never been enlightened until you\'ve joined this club",
     link: "https://groupme.com/join_group/103001220/PwO0OEUZ",
   },
   {
     name: "Econ Club",
-    description: "ryan wang",
-    link: "/clubs/art",
+    description: "Learn econ and compete in competitions",
+    link: "https://groupme.com/join_group/102959271/91ZkN81o",
   },
   {
     name: "Chess Club",
