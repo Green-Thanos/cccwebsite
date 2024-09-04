@@ -7,32 +7,32 @@ export interface Club {
 export const clubsData: Club[] = [
   {
     name: "Math Club",
-    description: "Seeded data + descriptions",
+    description: "Nerd club",
     link: "/clubs/robotics",
   },
   {
     name: "Physics Club",
-    description: "Develop critical thinking and public speaking skills",
+    description: "Most fun",
     link: "/clubs/debate",
   },
   {
     name: "Artificial Intelligence Club",
-    description: "Work on sustainability projects and raise awareness",
+    description: "matthew li",
     link: "https://groupme.com/join_group/103001220/PwO0OEUZ",
   },
   {
     name: "Econ Club",
-    description: "Express creativity through various mediums",
+    description: "ryan wang",
     link: "/clubs/art",
   },
   {
     name: "Chess Club",
-    description: "Solve challenging math problems and compete",
+    description: "ryan wang",
     link: "/clubs/math-olympiad",
   },
   {
     name: "Hack Club",
-    description: "Simulate United Nations committees and debates",
+    description: "tbh idk what this club is for",
     link: "/clubs/model-un",
   },
 ];

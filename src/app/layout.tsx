@@ -5,8 +5,8 @@ import "@/styles/globals.css";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'THS CCC - Join us for 2024-2025!',
-  description: 'THS Computer Coding Club - Get ready for our best year yet.',
+  title: 'THS CCC',
+  description: 'THS Computer Coding Club - Get ready for our best year yet. Join us for 2024-2025!',
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   openGraph: {
     title: 'THS CCC - Join us for 2024-2025!',
